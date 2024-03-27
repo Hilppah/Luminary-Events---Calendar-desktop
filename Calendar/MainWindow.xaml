@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calendar"
         xmlns:fa="http://schemas.fontawesome.io/icons/"
+        xmlns:controls="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True"
         Background="Transparent">
@@ -206,6 +207,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        
     </Window.Resources>
 
     <Grid>
@@ -221,12 +223,24 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="203*"/>
-                <ColumnDefinition Width="15*"/>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="182*"/>
             </Grid.ColumnDefinitions>
 
 
-            <Calendar CalendarItemStyle="{DynamicResource CalendarCalendarItemStyle1}" Style="{DynamicResource CalendarStyle1}" Grid.ColumnSpan="2"/>
+            <Calendar CalendarItemStyle="{DynamicResource CalendarCalendarItemStyle1}" 
+                      Style="{DynamicResource CalendarStyle1}"
+                      Grid.ColumnSpan="2"/>
+
+            <StackPanel Grid.Column="2">
+                <StackPanel Margin="20 45 30 10" Orientation="Horizontal">
+                    <TextBlock x:Name="textPanel" 
+                               Text="{Binding SelectedDate}"
+                               FontSize="30" 
+                               Foreground="Black"/>
+                    
+                </StackPanel>
+            </StackPanel>
 
             <!--<StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 50 0 30" >
