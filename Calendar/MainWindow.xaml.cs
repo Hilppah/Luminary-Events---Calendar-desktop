@@ -22,47 +22,13 @@ namespace Calendar
     /// </summary>
     public partial class MainWindow : Window
     {
-        DateInfo myDateInfo;
         public MainWindow()
         {
-            myDateInfo = new DateInfo()
-            {
-                SelectedDate = DateTime.Now,
-            };
             InitializeComponent();
-
-            textPanel.DataContext = myDateInfo;
         }
 
-        public class DateInfo : INotifyPropertyChanged
-        {
-            private DateTime? selectedDate;
-
-            public DateTime? SelectedDate
-            {
-                get
-                {
-                    return this.selectedDate;
-                }
-                set
-                {
-                    if (this.selectedDate != value)
-                    {
-                        this.selectedDate = value;
-                        pChanged("SelectedDate");
-                    }
-                }
-            }
-
-            protected virtual void pChanged(string pName)
-            {
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged(this, new PropertyChangedEventArgs(pName));
-                }
-
-            }
-            public event PropertyChangedEventHandler PropertyChanged;
+        private void dateChanged(object sender, SelectionChangedEventArgs e) {
+            textPanel.Text = txtCalendar.SelectedDate.ToString();
         }
     }
 }

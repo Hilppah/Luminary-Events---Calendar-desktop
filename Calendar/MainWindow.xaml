@@ -207,7 +207,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        
+
     </Window.Resources>
 
     <Grid>
@@ -228,19 +228,21 @@
             </Grid.ColumnDefinitions>
 
 
-            <Calendar CalendarItemStyle="{DynamicResource CalendarCalendarItemStyle1}" 
+            <Calendar Name="txtCalendar"
+                      SelectedDatesChanged="dateChanged"
+                      CalendarItemStyle="{DynamicResource CalendarCalendarItemStyle1}" 
                       Style="{DynamicResource CalendarStyle1}"
                       Grid.ColumnSpan="2"/>
 
             <StackPanel Grid.Column="2">
                 <StackPanel Margin="20 45 30 10" Orientation="Horizontal">
                     <TextBlock x:Name="textPanel" 
-                               Text="{Binding SelectedDate}"
                                FontSize="30" 
                                Foreground="Black"/>
-                    
+
                 </StackPanel>
             </StackPanel>
+       
 
             <!--<StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 50 0 30" >
