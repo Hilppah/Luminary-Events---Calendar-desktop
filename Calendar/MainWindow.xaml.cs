@@ -30,5 +30,11 @@ namespace Calendar
         private void dateChanged(object sender, SelectionChangedEventArgs e) {
             textPanel.Text = txtCalendar.SelectedDate.ToString();
         }
+
+        private void buttonClick(object sender, RoutedEventArgs e)
+        {
+            ItemInfo itemInfo = new ItemInfo();
+            itemInfo.Show();
+        }
     }
 }

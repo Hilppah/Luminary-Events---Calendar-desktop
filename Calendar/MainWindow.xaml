@@ -238,11 +238,20 @@
                 <StackPanel Margin="20 45 30 10" Orientation="Horizontal">
                     <TextBlock x:Name="textPanel" 
                                FontSize="30" 
-                               Foreground="Black"/>
+                               Foreground="White"/>
 
                 </StackPanel>
             </StackPanel>
-       
+
+            <StackPanel Grid.Column="2">
+                <StackPanel Margin="20 150 30 10" Orientation="Horizontal">
+                    <TextBlock x:Name="eventInfo"
+                               Text="Moi"
+                               FontSize="25"
+                               Foreground="White"/>
+                </StackPanel>
+            </StackPanel>
+
 
             <!--<StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 50 0 30" >
@@ -253,6 +262,14 @@
             </StackPanel> -->
 
         </Grid>
+        <Button Name="itemButton"
+                Click="buttonClick"
+                Content="Tavaraluettelo" 
+                HorizontalAlignment="Left" 
+                Height="45" 
+                Margin="537,361,0,0" 
+                VerticalAlignment="Top"
+                Width="150"/>
 
 
 
