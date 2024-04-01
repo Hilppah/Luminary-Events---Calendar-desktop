@@ -52,7 +52,8 @@
                     <ControlTemplate TargetType="{x:Type CalendarItem}">
                         <ControlTemplate.Resources>
                             <DataTemplate x:Key="{x:Static CalendarItem.DayTitleTemplateResourceKey}">
-                                <TextBlock Foreground="#FF333333" FontFamily="Verdana" FontWeight="Bold" FontSize="9.5" HorizontalAlignment="Center" Margin="0,6,0,6" Text="{Binding}" VerticalAlignment="Center"/>
+                                <TextBlock Foreground="#949BA4" FontFamily="Verdana" FontWeight="Bold" FontSize="9.5"
+                                           HorizontalAlignment="Center" Margin="0,6,0,6" Text="{Binding}" VerticalAlignment="Center"/>
                             </DataTemplate>
                         </ControlTemplate.Resources>
                         <Grid x:Name="PART_Root">
@@ -69,7 +70,8 @@
                                     </VisualState>
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
-                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="1">
+                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="1">
                                 <Border BorderBrush="#FFFFFFFF" BorderThickness="2" CornerRadius="1">
                                     <Grid>
                                         <Grid.Resources>
@@ -80,19 +82,23 @@
                                                             <VisualState x:Name="Normal"/>
                                                             <VisualState x:Name="MouseOver">
                                                                 <Storyboard>
-                                                                    <ColorAnimation Duration="0" Storyboard.TargetName="path" To="#FF73A9D8" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"/>
+                                                                    <ColorAnimation Duration="0" Storyboard.TargetName="path" To="#FF73A9D8"
+                                                                                    Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"/>
                                                                 </Storyboard>
                                                             </VisualState>
                                                             <VisualState x:Name="Disabled">
                                                                 <Storyboard>
-                                                                    <DoubleAnimation Duration="0" Storyboard.TargetName="path" To=".5" Storyboard.TargetProperty="(Shape.Fill).(Brush.Opacity)"/>
+                                                                    <DoubleAnimation Duration="0" Storyboard.TargetName="path" To=".5"
+                                                                                     Storyboard.TargetProperty="(Shape.Fill).(Brush.Opacity)"/>
                                                                 </Storyboard>
                                                             </VisualState>
                                                         </VisualStateGroup>
                                                     </VisualStateManager.VisualStateGroups>
                                                     <Rectangle Fill="#11E5EBF1" Opacity="1" Stretch="Fill"/>
                                                     <Grid>
-                                                        <Path x:Name="path" Data="M288.75,232.25 L288.75,240.625 L283,236.625 z" Fill="#FF333333" HorizontalAlignment="Left" Height="10" Margin="14,-6,0,0" Stretch="Fill" VerticalAlignment="Center" Width="6"/>
+                                                        <Path x:Name="path" Data="M288.75,232.25 L288.75,240.625 L283,236.625 z"
+                                                              Fill="#FF333333" HorizontalAlignment="Left" Height="10" Margin="14,-6,0,0"
+                                                              Stretch="Fill" VerticalAlignment="Center" Width="6"/>
                                                     </Grid>
                                                 </Grid>
                                             </ControlTemplate>
@@ -103,19 +109,23 @@
                                                             <VisualState x:Name="Normal"/>
                                                             <VisualState x:Name="MouseOver">
                                                                 <Storyboard>
-                                                                    <ColorAnimation Duration="0" Storyboard.TargetName="path" To="#FF73A9D8" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"/>
+                                                                    <ColorAnimation Duration="0" Storyboard.TargetName="path" To="#FF73A9D8"
+                                                                                    Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"/>
                                                                 </Storyboard>
                                                             </VisualState>
                                                             <VisualState x:Name="Disabled">
                                                                 <Storyboard>
-                                                                    <DoubleAnimation Duration="0" Storyboard.TargetName="path" To=".5" Storyboard.TargetProperty="(Shape.Fill).(Brush.Opacity)"/>
+                                                                    <DoubleAnimation Duration="0" Storyboard.TargetName="path" To=".5"
+                                                                                     Storyboard.TargetProperty="(Shape.Fill).(Brush.Opacity)"/>
                                                                 </Storyboard>
                                                             </VisualState>
                                                         </VisualStateGroup>
                                                     </VisualStateManager.VisualStateGroups>
                                                     <Rectangle Fill="#11E5EBF1" Opacity="1" Stretch="Fill"/>
                                                     <Grid>
-                                                        <Path x:Name="path" Data="M282.875,231.875 L282.875,240.375 L288.625,236 z" Fill="#FF333333" HorizontalAlignment="Right" Height="10" Margin="0,-6,14,0" Stretch="Fill" VerticalAlignment="Center" Width="6"/>
+                                                        <Path x:Name="path" Data="M282.875,231.875 L282.875,240.375 L288.625,236 z"
+                                                              Fill="#FF333333" HorizontalAlignment="Right" Height="10" Margin="0,-6,14,0"
+                                                              Stretch="Fill" VerticalAlignment="Center" Width="6"/>
                                                     </Grid>
                                                 </Grid>
                                             </ControlTemplate>
@@ -126,17 +136,22 @@
                                                             <VisualState x:Name="Normal"/>
                                                             <VisualState x:Name="MouseOver">
                                                                 <Storyboard>
-                                                                    <ColorAnimation Duration="0" Storyboard.TargetName="buttonContent" To="#FF73A9D8" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)"/>
+                                                                    <ColorAnimation Duration="0" Storyboard.TargetName="buttonContent" To="#FF73A9D8"
+                                                                                    Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)"/>
                                                                 </Storyboard>
                                                             </VisualState>
                                                             <VisualState x:Name="Disabled">
                                                                 <Storyboard>
-                                                                    <DoubleAnimation Duration="0" Storyboard.TargetName="buttonContent" To=".5" Storyboard.TargetProperty="Opacity"/>
+                                                                    <DoubleAnimation Duration="0" Storyboard.TargetName="buttonContent"
+                                                                                     To=".5" Storyboard.TargetProperty="Opacity"/>
                                                                 </Storyboard>
                                                             </VisualState>
                                                         </VisualStateGroup>
                                                     </VisualStateManager.VisualStateGroups>
-                                                    <ContentPresenter x:Name="buttonContent" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" TextElement.Foreground="#FF333333" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="1,4,1,9" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                                    <ContentPresenter x:Name="buttonContent" ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                                      Content="{TemplateBinding Content}" TextElement.Foreground="#FF333333"
+                                                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="1,4,1,9"
+                                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                                                 </Grid>
                                             </ControlTemplate>
                                         </Grid.Resources>
@@ -188,7 +203,8 @@
                                     </Grid>
                                 </Border>
                             </Border>
-                            <Rectangle x:Name="PART_DisabledVisual" Fill="{StaticResource DisabledColor}" Opacity="0" RadiusX="2" RadiusY="2" Stroke="{StaticResource DisabledColor}" Stretch="Fill" StrokeThickness="1" Visibility="Collapsed"/>
+                            <Rectangle x:Name="PART_DisabledVisual" Fill="{StaticResource DisabledColor}" Opacity="0"
+                                       RadiusX="2" RadiusY="2" Stroke="{StaticResource DisabledColor}" Stretch="Fill" StrokeThickness="1" Visibility="Collapsed"/>
                         </Grid>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsEnabled" Value="False">
@@ -269,9 +285,11 @@
                 Height="45" 
                 Margin="537,361,0,0" 
                 VerticalAlignment="Top"
+                Background="#FF93FF"
                 Width="150"/>
 
-
+        <ListBox x:Name="listBox" Visibility="Collapsed"/>
 
     </Grid>
+    
 </Window>
