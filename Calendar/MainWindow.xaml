@@ -15,8 +15,8 @@
             <Setter Property="Background">
                 <Setter.Value>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#302C34" Offset="0"/>
-                        <GradientStop Color="#38343C" Offset="0.16"/>
+                        <GradientStop Color="#38343C" Offset="0"/>
+                        <GradientStop Color="#949BA4" Offset="0.16"/>
                         <GradientStop Color="#FF93FF" Offset="1"/>
                     </LinearGradientBrush>
                 </Setter.Value>
@@ -254,7 +254,7 @@
                 <StackPanel Margin="20 45 30 10" Orientation="Horizontal">
                     <TextBlock x:Name="textPanel" 
                                FontSize="30" 
-                               Foreground="White"/>
+                               Foreground="#F2F3F5"/>
 
                 </StackPanel>
             </StackPanel>
@@ -286,7 +286,9 @@
                 Margin="537,361,0,0" 
                 VerticalAlignment="Top"
                 Background="#FF93FF"
-                Width="150"/>
+                Width="150"
+                FontFamily="Verdana"
+                FontWeight="Bold"/>
 
         <ListBox x:Name="listBox" Visibility="Collapsed"/>
 
