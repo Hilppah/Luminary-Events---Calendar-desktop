@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="ItemInfo" Height="450" Width="800">
     <Grid>
-        
+		<Border Background="#201C24" Grid.ColumnSpan="2" Margin="0,0,0,0"/>
+		<ListBox x:Name="listBox" Background="#38343C"
+				 Height="350" Width="600"/>
     </Grid>
 </Window>
