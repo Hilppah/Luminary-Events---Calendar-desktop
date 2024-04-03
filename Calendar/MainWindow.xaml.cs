@@ -33,10 +33,17 @@ namespace Calendar
             textPanel.Text = txtCalendar.SelectedDate.ToString();
         }
 
+        //functionality for the button "tavaraluettelo"
         private void buttonClick(object sender, RoutedEventArgs e)
         {
             ItemInfo itemInfo = new ItemInfo();
             itemInfo.Show();
+        }
+
+        //functionality for the button "kalustoinfo"
+        private void equipmentClick(object sender, RoutedEventArgs e)
+        {
+            Frame.Content = new equipment();
         }
 
         Grid grid = new Grid();

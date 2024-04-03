@@ -231,7 +231,10 @@
         <Grid>
 
 
-            <Border CornerRadius="20 20 20 20" Background="#201c24" Grid.ColumnSpan="2" Margin="0,0,0,0"/>
+            <Border CornerRadius="20 20 20 20" 
+                    Background="#201c24" 
+                    Grid.ColumnSpan="2" 
+                    Margin="0,0,0,0"/>
 
         </Grid>
 
@@ -260,13 +263,29 @@
             </StackPanel>
 
             <StackPanel Grid.Column="2">
-                <StackPanel Margin="20 150 30 10" Orientation="Horizontal">
+                <StackPanel Margin="10 150 30 10" Orientation="Horizontal">
                     <TextBlock x:Name="eventInfo"
                                Text="Moi"
                                FontSize="25"
                                Foreground="White"/>
                 </StackPanel>
             </StackPanel>
+
+            <Frame x:Name="Frame" 
+                   Margin="0,160,6,0"
+                   NavigationUIVisibility="Hidden" 
+                   Grid.Column="2"/>
+
+            <Button x:Name="equipmentBtn"
+                    Click="equipmentClick"
+                    Grid.Column="2" 
+                    Content="Kalustoinfo" 
+                    Background="#FF93FF"
+                    HorizontalAlignment="Center" 
+                    Margin="0,239,0,0" 
+                    VerticalAlignment="Top"
+                    Width="150"
+                    Height="45"/>
 
 
             <!--<StackPanel>
@@ -293,5 +312,5 @@
         <ListBox x:Name="listBox" Visibility="Collapsed"/>
 
     </Grid>
-    
+
 </Window>
