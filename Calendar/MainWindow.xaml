@@ -276,13 +276,20 @@
                    NavigationUIVisibility="Hidden" 
                    Grid.Column="2"/>
 
+            <StackPanel Grid.Column="2">
+                <StackPanel Margin="36,358,0,0" 
+                        Orientation="Horizontal">
+                    
+                </StackPanel>
+            </StackPanel>
+
             <Button x:Name="equipmentBtn"
                     Click="equipmentClick"
                     Grid.Column="2" 
                     Content="Kalustoinfo" 
                     Background="#FF93FF"
-                    HorizontalAlignment="Center" 
-                    Margin="0,239,0,0" 
+                    HorizontalAlignment="Left" 
+                    Margin="36,358,0,0" 
                     VerticalAlignment="Top"
                     Width="150"
                     Height="45"/>
@@ -302,7 +309,7 @@
                 Content="Tavaraluettelo" 
                 HorizontalAlignment="Left" 
                 Height="45" 
-                Margin="537,361,0,0" 
+                Margin="624,359,0,0" 
                 VerticalAlignment="Top"
                 Background="#FF93FF"
                 Width="150"
