@@ -272,14 +272,14 @@
             </StackPanel>
 
             <Frame x:Name="Frame" 
-                   Margin="0,160,6,0"
+                   Margin="0,90,6,70"
                    NavigationUIVisibility="Hidden" 
                    Grid.Column="2"/>
 
             <StackPanel Grid.Column="2">
-                <StackPanel Margin="36,358,0,0" 
+                <StackPanel Margin="20,360,20,0" 
                         Orientation="Horizontal">
-                    
+
                 </StackPanel>
             </StackPanel>
 
@@ -289,7 +289,7 @@
                     Content="Kalustoinfo" 
                     Background="#FF93FF"
                     HorizontalAlignment="Left" 
-                    Margin="36,358,0,0" 
+                    Margin="39,395,0,0" 
                     VerticalAlignment="Top"
                     Width="150"
                     Height="45"/>
@@ -309,7 +309,7 @@
                 Content="Tavaraluettelo" 
                 HorizontalAlignment="Left" 
                 Height="45" 
-                Margin="624,359,0,0" 
+                Margin="621,395,0,0" 
                 VerticalAlignment="Top"
                 Background="#FF93FF"
                 Width="150"

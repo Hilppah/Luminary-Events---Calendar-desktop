@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -30,7 +31,7 @@ namespace Calendar
 
         private void dateChanged(object sender, SelectionChangedEventArgs e)
         {
-            textPanel.Text = txtCalendar.SelectedDate.ToString();
+            textPanel.Text = txtCalendar.SelectedDate?.ToShortDateString();
         }
 
         //functionality for the button "tavaraluettelo"
@@ -40,10 +41,17 @@ namespace Calendar
             itemInfo.Show();
         }
 
-        //functionality for the button "kalustoinfo"
+        //functionality for the button "kalustoinfo". closes when pressed again
         private void equipmentClick(object sender, RoutedEventArgs e)
         {
-            Frame.Content = new equipment();
+            if (Frame.Content is equipment)
+            {
+                Frame.Navigate(Frame.Source);
+            }
+            else
+            {
+                Frame.Content = new equipment();
+            }
         }
 
         Grid grid = new Grid();
