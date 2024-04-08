@@ -304,13 +304,8 @@
                 Height="45" 
                 Margin="537,361,0,0" 
                 VerticalAlignment="Top"
-                Background="#FF93FF"
-                Width="150"
-                FontFamily="Verdana"
-                FontWeight="Bold"/>
-
-        <ListBox x:Name="listBox" Visibility="Collapsed"/>
-
+                Width="150"/>
+        
     </Grid>
 
 </Window>
