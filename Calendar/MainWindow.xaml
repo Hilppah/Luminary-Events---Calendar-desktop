@@ -267,14 +267,15 @@
                     <TextBlock x:Name="eventInfo"
                                Text="Moi"
                                FontSize="25"
-                               Foreground="White"/>
+                               Foreground="#949BA4"/>
                 </StackPanel>
             </StackPanel>
 
             <Frame x:Name="Frame" 
                    Margin="0,90,6,70"
                    NavigationUIVisibility="Hidden" 
-                   Grid.Column="2"/>
+                   Grid.Column="2"
+                   Foreground="#949BA4"/>
 
             <StackPanel Grid.Column="2">
                 <StackPanel Margin="20,360,20,0" 
@@ -292,16 +293,10 @@
                     Margin="39,395,0,0" 
                     VerticalAlignment="Top"
                     Width="150"
-                    Height="45"/>
+                    Height="45"
+                    FontFamily="Verdana"
+                    FontWeight="Bold"/>
 
-
-            <!--<StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 50 0 30" >
-                    <Button>
-                        <fa:ImageAwesome Icon="AngleLeft"/>  
-                    </Button>
-                </StackPanel>
-            </StackPanel> -->
 
         </Grid>
         <Button Name="itemButton"
@@ -311,8 +306,10 @@
                 Height="45" 
                 Margin="621,395,0,0" 
                 VerticalAlignment="Top"
-                Width="150"/>
-        
+                Width="150"
+                FontFamily="Verdana"
+                FontWeight="Bold"/>
+   
     </Grid>
 
 </Window>
