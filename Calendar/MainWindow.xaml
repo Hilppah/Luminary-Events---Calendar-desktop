@@ -265,7 +265,6 @@
             <StackPanel Grid.Column="2">
                 <StackPanel Margin="10 150 30 10" Orientation="Horizontal">
                     <TextBlock x:Name="eventInfo"
-                               Text="Moi"
                                FontSize="25"
                                Foreground="White"/>
                 </StackPanel>

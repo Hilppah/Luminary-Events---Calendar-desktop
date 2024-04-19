@@ -26,21 +26,6 @@ namespace Calendar
         public equipment()
         {
             InitializeComponent();
-            using (HttpClient client = new HttpClient())
-            {
-                var endopint = new Uri("https://mekelektro.com/orders/");
-                var res = client.GetAsync(endopint).Result.Content.ReadAsStringAsync().Result;
-                string json = res;
-                //dynamic jsonData = JsonConvert.DeserializeObject(json);
-                ApiCLass[] apiCLasses = JsonConvert.DeserializeObject<ApiCLass[]>(json);
-                
-
-                foreach (var  apiCLass in apiCLasses)
-                {
-                    textInfo.Text = $"Start: {apiCLass.order_start_date}";
-                }
-
-            }
         }
 
     }

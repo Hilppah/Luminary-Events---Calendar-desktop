@@ -1,22 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Net.Http;
-using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using Newtonsoft.Json;
 
 namespace Calendar
 {
@@ -28,6 +15,29 @@ namespace Calendar
         public MainWindow()
         {
             InitializeComponent();
+
+            // calling API and printing value
+            using (HttpClient client = new HttpClient())
+            {
+                string url = System.Environment.GetEnvironmentVariable("apiUrl");
+                var endpoint = new Uri(url);
+                var res = client.GetAsync(endpoint).Result.Content.ReadAsStringAsync().Result;
+                string json = res;
+                //dynamic jsonData = JsonConvert.DeserializeObject(json);
+                ApiCLass[] apiCLasses = JsonConvert.DeserializeObject<ApiCLass[]>(json);
+
+
+                foreach (var apiCLass in apiCLasses)
+                {
+                    DateTime dateTime;
+                    string timetest = apiCLass.order_start_date;
+                    DateTime.TryParseExact(timetest, "yyyy-MM-ddTHH:mm:ss.fffZ", CultureInfo.CurrentCulture, DateTimeStyles.AssumeUniversal, out dateTime);
+                    string changedTime = dateTime.ToString();
+                    eventInfo.Text = changedTime;
+                    //eventInfo.Text = $"Start: {apiCLass.order_start_date}";
+                }
+
+            }
         }
 
         private void dateChanged(object sender, SelectionChangedEventArgs e)
