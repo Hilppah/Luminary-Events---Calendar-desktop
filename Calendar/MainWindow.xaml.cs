@@ -1,21 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace Calendar
 {
@@ -29,9 +17,39 @@ namespace Calendar
             InitializeComponent();
         }
 
+        // functionality to call API and print out the event date and time
         private void dateChanged(object sender, SelectionChangedEventArgs e)
         {
             textPanel.Text = txtCalendar.SelectedDate?.ToShortDateString();
+            var selectedDate = txtCalendar.SelectedDate.Value.ToShortDateString();
+
+            using (HttpClient client = new HttpClient())
+            {
+                var endpoint = new Uri("ApiUrl");
+                var res = client.GetAsync(endpoint).Result.Content.ReadAsStringAsync().Result;
+                string json = res;
+                ApiCLass[] apiCLasses = JsonConvert.DeserializeObject<ApiCLass[]>(json);
+
+                eventInfo.Text = "";
+
+                foreach (var apiCLass in apiCLasses)
+                {
+                    DateTime dateTime;
+                    DateTime timeDate;
+                    string timetest = apiCLass.order_start_date;
+                    string time = apiCLass.order_start_date;
+                    DateTime.TryParseExact(timetest, "yyyy-MM-ddTHH:mm:ss.fffZ", CultureInfo.CurrentCulture, DateTimeStyles.AssumeUniversal, out dateTime);
+                    DateTime.TryParseExact(time, "yyyy-MM-ddTHH:mm:ss.fffZ", CultureInfo.CurrentCulture, DateTimeStyles.AssumeUniversal, out timeDate);
+                    string changedTime = timeDate.ToShortTimeString();
+                    string changedDate = dateTime.ToShortDateString();
+
+                    if (selectedDate == changedDate)
+                    {
+                        eventInfo.Text += changedDate + ": " + changedTime + "\n";
+                    }
+                }
+            }
+
         }
 
         //functionality for the button "tavaraluettelo"
