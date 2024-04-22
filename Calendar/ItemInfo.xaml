@@ -7,23 +7,8 @@
         mc:Ignorable="d"
         Title="ItemInfo" Height="450" Width="800">
     <Grid>
-        <ListView x:Name="infoList" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Height="310">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Kalusto" Width="200"/>
-                    <GridViewColumn Header="KPL" Width="200">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <StackPanel Orientation="Vertical">
-                                    <TextBlock Text="Extra Info 1" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
-                                    <TextBlock Text="Extra Info 2" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
-                                </StackPanel>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                </GridView>
-            </ListView.View>
-        </ListView>
+		<Border Background="#201C24" Grid.ColumnSpan="2" Margin="0,0,0,0"/>
+		<ListBox x:Name="listBox" Background="#38343C"
+				 Height="350" Width="600"/>
     </Grid>
-
 </Window>
