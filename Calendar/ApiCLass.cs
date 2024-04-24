@@ -20,7 +20,9 @@ namespace Calendar
         public string customer_email { get; set; }
         public string order_status { get; set; }
         public string payment_resolved { get; set; }
-        // public string contents { get; set;}
+        public string name { get; set; }
+        public string current_stock { get; set; }
+
     }
 }
 

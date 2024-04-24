@@ -7,7 +7,7 @@
         xmlns:fa="http://schemas.fontawesome.io/icons/"
         xmlns:controls="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True"
+        Title="MainWindow" Height="700" Width="1200" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True"
         Background="Transparent">
     <Window.Resources>
         <Style x:Key="CalendarStyle1" TargetType="{x:Type Calendar}">
@@ -263,13 +263,15 @@
             </StackPanel>
 
             <StackPanel Grid.Column="2">
-                <StackPanel Margin="10 150 30 10" Orientation="Horizontal">
+                <StackPanel Margin="10 110 30 10" Orientation="Horizontal">
                     <TextBlock x:Name="eventInfo"
+                               FontSize="18"
+                               Foreground="#949BA4"/>
                 </StackPanel>
             </StackPanel>
 
             <Frame x:Name="Frame" 
-                   Margin="10,221,6,70"
+                   Margin="10,221,25,119"
                    NavigationUIVisibility="Hidden" 
                    Grid.Column="2"
                    Foreground="#949BA4"/>
@@ -287,7 +289,7 @@
                     Content="Kalustoinfo" 
                     Background="#FF93FF"
                     HorizontalAlignment="Left" 
-                    Margin="39,395,0,0" 
+                    Margin="42,603,0,0" 
                     VerticalAlignment="Top"
                     Width="150"
                     Height="45"
@@ -301,7 +303,7 @@
                 Content="Tavaraluettelo" 
                 HorizontalAlignment="Left" 
                 Height="45" 
-                Margin="621,395,0,0" 
+                Margin="872,602,0,0" 
                 VerticalAlignment="Top"
                 Width="150"
                 FontFamily="Verdana"
