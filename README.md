@@ -4,9 +4,11 @@ A school project made for Luminary Events. This was a third year OAMK school pro
 ## Screenshots 
 
 ![image](https://github.com/Hilppah/Luminary-Events---Calendar-desktop/assets/101551721/6b24d780-62e8-486d-bcb4-418ccab88cd9)
+
 Events shown on the same day as the selected day on the calendar. 
 
 ![image](https://github.com/Hilppah/Luminary-Events---Calendar-desktop/assets/101551721/a72a01b9-e8ec-4a1b-b1dd-233aa7dbeee8)
+
 Window opened from "tavaraluettelo" button which shows the inventory. Kalustoinfo also opens a separete window that currently prints a placeholder text. 
 
 
