@@ -5,10 +5,118 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calendar"
         mc:Ignorable="d"
-        Title="ItemInfo" Height="450" Width="800">
+        Title="ItemInfo" Height="500" Width="850">
     <Grid>
-		<Border Background="#201C24" Grid.ColumnSpan="2" Margin="0,0,0,0"/>
-		<ListBox x:Name="listBox" Background="#38343C"
-				 Height="350" Width="600"/>
+        <Border Background="#201C24" Grid.ColumnSpan="2" Margin="0,0,0,0"/>
+        <ListBox x:Name="listBox" Background="#38343C" Margin="100,27,186,50"/>
+        <TextBlock Margin="109,27,0,386"
+           Text="PartyBox 3000"
+           HorizontalAlignment="Left"
+           Width="103"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,48,0,365"
+           Text="T. Box Pro 112 -kokoäänikaiutin"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,69,0,344"
+           Text="T.Box 206 -kokoäänikaiutin"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,90,0,323"
+           Text="Crest DX 1100 -kokoäänikaiutin"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,111,0,302"
+           Text="T.Box TA18 Subwoofer"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,132,0,281"
+           Text="Proel SW115A Subwoofer"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,153,0,260"
+           Text="Passive 118 Subwoofer"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,174,0,239"
+           Text="CDJ-350 DJ-mixeri"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,195,0,218"
+           Text="Behringer DJX900 DJ-mixeri"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,216,0,197"
+           Text="AT-M50x Studiokuulokkeet"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,237,0,176"
+           Text="AF-40 Savukone"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,258,0,155"
+           Text="Pot Strobe 100 -strobovalo"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,279,0,134"
+           Text="TCL Spot -spottivalo"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,300,0,113"
+           Text="Mini Spider FX LED-valo"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,321,0,92"
+           Text="DMX 384 Valo-ohjain"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,342,0,71"
+           Text="EL-230 RGB Laser -laservalo"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,363,0,50"
+           Text="Quad UV Spot PAR-valo"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
+        <TextBlock Margin="109,384,0,29"
+           Text="UV Bar Pix 8 LED Bar"
+           HorizontalAlignment="Left"
+           Width="213"
+           FontSize="15"
+           Foreground="White"/>
     </Grid>
+
 </Window>

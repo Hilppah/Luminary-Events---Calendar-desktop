@@ -265,14 +265,11 @@
             <StackPanel Grid.Column="2">
                 <StackPanel Margin="10 150 30 10" Orientation="Horizontal">
                     <TextBlock x:Name="eventInfo"
-                               Text="Moi"
-                               FontSize="25"
-                               Foreground="#949BA4"/>
                 </StackPanel>
             </StackPanel>
 
             <Frame x:Name="Frame" 
-                   Margin="0,90,6,70"
+                   Margin="10,221,6,70"
                    NavigationUIVisibility="Hidden" 
                    Grid.Column="2"
                    Foreground="#949BA4"/>
