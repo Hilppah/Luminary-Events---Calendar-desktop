@@ -25,7 +25,7 @@ namespace Calendar
 
             using (HttpClient client = new HttpClient())
             {
-                var endpoint = new Uri("ApiUrl");
+                var endpoint = new Uri("https://mekelektro.com/orders/");
                 var res = client.GetAsync(endpoint).Result.Content.ReadAsStringAsync().Result;
                 string json = res;
                 ApiCLass[] apiCLasses = JsonConvert.DeserializeObject<ApiCLass[]>(json);
