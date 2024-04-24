@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -22,6 +25,27 @@ namespace Calendar
         public information()
         {
             InitializeComponent();
+        }
+
+        private void stuff(object sender, SelectionChangedEventArgs e)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                var endpoint = new Uri("ApiUrl");
+                var res = client.GetAsync(endpoint).Result.Content.ReadAsStringAsync().Result;
+                string json = res;
+                ApiCLass[] apiCLasses = JsonConvert.DeserializeObject<ApiCLass[]>(json);
+
+                userInfo.Text = "";
+
+                foreach (var apiCLass in apiCLasses)
+                {
+                    string name = apiCLass.name;
+                    string stock = apiCLass.current_stock;
+
+                    userInfo.Text += name + "\n";
+                }
+            }
         }
     }
 }
