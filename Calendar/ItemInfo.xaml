@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calendar"
         mc:Ignorable="d"
-        Title="ItemInfo" Height="450" Width="800">
+        Title="ItemInfo" Height="500" Width="850">
     <Grid>
         <Border Background="#201C24" Grid.ColumnSpan="2" Margin="0,0,0,0"/>
-        <ListBox x:Name="listBox" Background="#38343C" Width="600" Margin="100,20,100,21"/>
+        <ListBox x:Name="listBox" Background="#38343C" Margin="100,27,186,50"/>
         <TextBlock Margin="109,27,0,386"
            Text="PartyBox 3000"
            HorizontalAlignment="Left"

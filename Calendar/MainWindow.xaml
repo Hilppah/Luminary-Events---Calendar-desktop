@@ -265,13 +265,13 @@
             <StackPanel Grid.Column="2">
                 <StackPanel Margin="10 150 30 10" Orientation="Horizontal">
                     <TextBlock x:Name="eventInfo"
-                               FontSize="25"
+                               FontSize="18"
                                Foreground="White"/>
                 </StackPanel>
             </StackPanel>
 
             <Frame x:Name="Frame" 
-                   Margin="10,211,6,70"
+                   Margin="10,221,6,70"
                    NavigationUIVisibility="Hidden" 
                    Grid.Column="2"/>
 
