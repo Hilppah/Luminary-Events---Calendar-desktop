@@ -265,15 +265,14 @@
             <StackPanel Grid.Column="2">
                 <StackPanel Margin="10 150 30 10" Orientation="Horizontal">
                     <TextBlock x:Name="eventInfo"
-                               FontSize="18"
-                               Foreground="White"/>
                 </StackPanel>
             </StackPanel>
 
             <Frame x:Name="Frame" 
                    Margin="10,221,6,70"
                    NavigationUIVisibility="Hidden" 
-                   Grid.Column="2"/>
+                   Grid.Column="2"
+                   Foreground="#949BA4"/>
 
             <StackPanel Grid.Column="2">
                 <StackPanel Margin="20,360,20,0" 
@@ -291,16 +290,10 @@
                     Margin="39,395,0,0" 
                     VerticalAlignment="Top"
                     Width="150"
-                    Height="45"/>
+                    Height="45"
+                    FontFamily="Verdana"
+                    FontWeight="Bold"/>
 
-
-            <!--<StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 50 0 30" >
-                    <Button>
-                        <fa:ImageAwesome Icon="AngleLeft"/>  
-                    </Button>
-                </StackPanel>
-            </StackPanel> -->
 
         </Grid>
         <Button Name="itemButton"
@@ -310,13 +303,10 @@
                 Height="45" 
                 Margin="621,395,0,0" 
                 VerticalAlignment="Top"
-                Background="#FF93FF"
                 Width="150"
                 FontFamily="Verdana"
                 FontWeight="Bold"/>
-
-        <ListBox x:Name="listBox" Visibility="Collapsed"/>
-
+   
     </Grid>
 
 </Window>
